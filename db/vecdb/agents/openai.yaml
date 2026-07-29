@@ -1,0 +1,4 @@
+interface:
+  display_name: "Oracle VecDB"
+  short_description: "Build Oracle VecDB SDK, REST, and PL/SQL workflows."
+  default_prompt: "Use $vecdb with an existing Oracle VecDB target. First determine whether ORDS is available; use Python SDK through ORDS by default, direct REST only for explicit HTTP needs, or DBMS_VECTOR_DATABASE when ORDS is unavailable. Never request real secrets or provision infrastructure."
