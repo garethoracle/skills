@@ -5,7 +5,7 @@ description: Oracle Database guidance for SQL, PL/SQL, SQLcl, ORDS, VecDB, admin
 
 # Oracle Database Skills
 
-This domain contains Oracle Database skills for administration, SQL and PL/SQL development, performance tuning, security, ORDS, SQLcl, migrations, framework integration, VecDB SDK/REST/PL/SQL workflows, OCR container guidance, and agent-safe database workflows.
+This domain contains Oracle Database skills for administration, SQL and PL/SQL development, performance tuning, security, ORDS, SQLcl, migrations, frameworks, VecDB SDK/REST/PL/SQL workflows, OCR container guidance, and agent-safe database workflows.
 
 ## How to Use This Domain
 
