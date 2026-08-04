@@ -7,7 +7,7 @@ retrieval: Python SDK `query()`, REST
 as `query_by` and `top_k`; REST uses camelCase such as `queryBy` and `topK`.
 VecDB requires Oracle AI Database 26ai+ at database version `23.26.3` or later.
 Select the query shape that matches the table: text needs integrated embeddings;
-vector search needs a compatible vector; record-ID search finds similar records.
+vector search needs a compatible vector; record-ID search finds records with the same record-ID.
 
 Before writing a search or rerank operation, read the matching row in
 `vecdb-api-reference.md`. Verify that `query_by` has exactly one of `text`,
