@@ -37,10 +37,8 @@ dataset, first ensure the target vector table already exists, then use the
 documented bulk-load operation with a CSV file that is already available at an
 approved object-storage URL. This is not a local-file loader.
 
-`load_vectors()` can create a missing table according to its API contract. This
-skill deliberately requires the table to be inspected or created explicitly
-first; do not rely on implicit creation unless the user explicitly wants that
-behavior and the current load reference has been reviewed.
+`load_vectors()` does not create a new table. This
+skill deliberately requires the table to be inspected or created.
 Large `upsert_vectors()` payloads can be automatically batched, but the
 database JSON object size limit still applies; use object-storage loading for
 large datasets.
