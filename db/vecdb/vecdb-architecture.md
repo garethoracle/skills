@@ -20,8 +20,9 @@ HTTP/non-Python client ----------------> ORDS VecDB REST API -> DBMS_VECTOR_DATA
 SQL or PL/SQL client ---------------------------------------> DBMS_VECTOR_DATABASE
 ```
 
-- Use the Python SDK for Python applications. Install it with
-  `python -m pip install oracle-vecdb`. Configure it with an ORDS `rest_url`.
+- Use the Python SDK for Python applications. Install or upgrade the latest
+stable release with `python -m pip install --upgrade oracle-vecdb`.
+Configure it with an ORDS `rest_url`.
 - Use direct REST for an explicit HTTP, curl, OpenAPI-style, or non-Python
   integration. Its endpoint is
   `https://<host>:<port>/ords/<schema>/_/db-api/stable/vecdb/`.
