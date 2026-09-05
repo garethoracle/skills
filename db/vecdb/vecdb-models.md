@@ -1,4 +1,4 @@
-# VecDB Models
+# Oracle Vector SDK Models
 
 Use model lifecycle operations only when the user asks to discover, load,
 describe, or drop a model, or needs documented embedding or reranking support.
@@ -34,8 +34,7 @@ require ORDS `26.2.2` or later.
 
 ## Sources
 
-- Oracle VecDB Python SDK API reference, including architecture and workflows:
-  https://docs.oracle.com/en/cloud/paas/autonomous-vector-database/vcapi/
+- Oracle Vector SDK API reference, including architecture and workflows: https://docs.oracle.com/en/cloud/paas/autonomous-database/vcapi/
 - Oracle Vector Database REST API reference:
   https://docs.oracle.com/en/database/oracle/oracle-rest-data-services/26.2/orrst
 - Oracle DBMS_VECTOR_DATABASE PL/SQL API reference:
