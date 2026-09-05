@@ -1,4 +1,5 @@
-# VecDB Vector Tables and Data
+# Oracle Vector SDK Vector Tables and Data
+
 
 Use this reference for vector-table definition, annotations, inline data,
 listing, deletion, and bulk-load jobs. Start with `list_vector_tables()` and
@@ -58,8 +59,7 @@ require ORDS `26.2.2` or later.
 
 ## Sources
 
-- Oracle VecDB Python SDK API reference, including architecture and workflows:
-  https://docs.oracle.com/en/cloud/paas/autonomous-vector-database/vcapi/
+- Oracle Vector SDK Python API reference, including architecture and workflows: https://docs.oracle.com/en/cloud/paas/autonomous-database/vcapi/
 - Oracle Vector Database REST API reference:
   https://docs.oracle.com/en/database/oracle/oracle-rest-data-services/26.2/orrst
 - Oracle DBMS_VECTOR_DATABASE PL/SQL API reference:
