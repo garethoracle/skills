@@ -96,8 +96,9 @@ or later; direct `DBMS_VECTOR_DATABASE` calls do not require ORDS.
 
 ## Sources
 
-- Oracle Vector SDK Python API quickstart and reference, including architecture and workflows:
-  https://docs.oracle.com/en/cloud/paas/autonomous-vector-database/vcapi/
+- Oracle Vector SDK Quick Start and setup source: https://docs.oracle.com/en/cloud/paas/autonomous-database/vcapi/quickstart.html
+- Oracle Vector SDK documentation root: https://docs.oracle.com/en/cloud/paas/autonomous-database/vcapi/
+- Oracle Vector SDK Python API reference: https://docs.oracle.com/en/cloud/paas/autonomous-database/vcapi/
 - Oracle Vector Database REST API reference:
   https://docs.oracle.com/en/database/oracle/oracle-rest-data-services/26.2/orrst
 - Oracle DBMS_VECTOR_DATABASE PL/SQL API reference:
