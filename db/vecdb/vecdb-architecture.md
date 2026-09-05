@@ -1,10 +1,11 @@
-# Oracle VecDB Architecture
+# Oracle Vector SDK Architecture
 
 ## Overview
 
-Oracle VecDB manages fixed schema vector tables, records, models, indexes, and asynchronous
-jobs in Oracle AI Database. It supports building applications for
-semantic search, RAG, recommendations,and durable agent memory.
+Oracle Vector SDK (also known as vecdb or oracle-vecdb manages fixed schema vector tables, 
+records, models, indexes, and asynchronous jobs in Oracle AI Database.
+It supports building applications for semantic search, RAG, recommendations,
+and durable agent memory.
 VecDB requires Oracle AI Database 26ai+ at database
 version `23.26.3` or later; it is not supported on Oracle Database 19c.
 
@@ -20,9 +21,9 @@ HTTP/non-Python client ----------------> ORDS VecDB REST API -> DBMS_VECTOR_DATA
 SQL or PL/SQL client ---------------------------------------> DBMS_VECTOR_DATABASE
 ```
 
-- Use the Python SDK for Python applications. Install or upgrade the latest
-stable release with `python -m pip install --upgrade oracle-vecdb`.
-Configure it with an ORDS `rest_url`.
+- Use the Oracle Vector SDK Python package for Python applications. Install or
+  upgrade the latest stable release with `python -m pip install --upgrade oracle-vecdb`.
+  Configure it with an ORDS `rest_url`.
 - Use direct REST for an explicit HTTP, curl, OpenAPI-style, or non-Python
   integration. Its endpoint is
   `https://<host>:<port>/ords/<schema>/_/db-api/stable/vecdb/`.
@@ -34,7 +35,19 @@ A direct DBMS_VECTOR_DATABASE package call does not require ORDS.
 Keep endpoint and authentication configuration outside source code;
 use placeholders in examples and keep TLS verification enabled.
 
+## Deployment setup
+
+For new deployment setup, read `vecdb-provisioning.md` first. Start with the
+Oracle Vector SDK Quick Start Guide and complete its **Prepare an AI Database**
+step.
+
 ## Source contract
+
+Ask for explicit confirmation before provisioning billable resources, deleting
+or dropping resources, loading or dropping models, starting bulk loads, or
+creating, rebuilding, or dropping indexes.
+
+Do not include credentials, or keys in committed material.
 
 Before producing implementation code, read `vecdb-api-reference.md`, then the
 exact current reference topics it names for the selected operation and client
@@ -68,7 +81,8 @@ object-storage URLs, or customer data in committed material.
 
 | Need                                                 | Read                     |
 | ---------------------------------------------------- | ------------------------ |
-| Any code, payload, or parameter question            | `vecdb-api-reference.md` |
+| New deployment setup                                 | `vecdb-provisioning.md`  |
+| Any code, payload, or parameter question             | `vecdb-api-reference.md` |
 | Embedding and reranking model discovery or lifecycle | `vecdb-models.md`        |
 | Vector table design, records, and bulk ingestion     | `vecdb-vector-tables.md` |
 | Similarity search, metadata filters, and reranking   | `vecdb-search.md`        |
@@ -82,7 +96,7 @@ or later; direct `DBMS_VECTOR_DATABASE` calls do not require ORDS.
 
 ## Sources
 
-- Oracle VecDB Python SDK API reference, including architecture and workflows:
+- Oracle Vector SDK Python API quickstart and reference, including architecture and workflows:
   https://docs.oracle.com/en/cloud/paas/autonomous-vector-database/vcapi/
 - Oracle Vector Database REST API reference:
   https://docs.oracle.com/en/database/oracle/oracle-rest-data-services/26.2/orrst
