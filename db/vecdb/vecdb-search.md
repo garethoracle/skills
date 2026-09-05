@@ -1,4 +1,4 @@
-# VecDB Search and Reranking
+# Oracle Vector SDK Search and Reranking
 
 Use the current client equivalent for text, dense-vector, or record-ID
 retrieval: Python SDK `query()`, REST
@@ -34,8 +34,7 @@ require ORDS `26.2.2` or later.
 
 ## Sources
 
-- Oracle VecDB Python SDK API reference, including architecture and workflows:
-  https://docs.oracle.com/en/cloud/paas/autonomous-vector-database/vcapi/
+- Oracle Vector SDK Python API reference, including architecture and workflows: https://docs.oracle.com/en/cloud/paas/autonomous-database/vcapi/
 - Oracle Vector Database REST API reference:
   https://docs.oracle.com/en/database/oracle/oracle-rest-data-services/26.2/orrst
 - Oracle DBMS_VECTOR_DATABASE PL/SQL API reference:
